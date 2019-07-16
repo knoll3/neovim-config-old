@@ -12,6 +12,7 @@ source ~/.config/nvim/os.vim
 source ~/.config/nvim/autocommands.vim
 source ~/.config/nvim/completions.vim
 source ~/.config/nvim/mappings.vim
+source ~/.config/nvim/word_processor.vim
 
 
 

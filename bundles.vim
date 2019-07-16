@@ -24,13 +24,17 @@ Plug 'challenger-deep-theme/vim'
 Plug 'fenetikm/falcon'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
+"Visual improvements
+Plug 'yuttie/comfortable-motion.vim'
 
 "Language Syntax Support
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'othree/yajs.vim'
 Plug 'pangloss/vim-javascript'
+
 Plug 'leafgarland/typescript-vim'
+
 Plug 'kchmck/vim-coffee-script'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-markdown'
@@ -41,6 +45,9 @@ Plug 'keith/swift.vim'
 Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
 
+"Git tools
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
 "Tools
 Plug 'w0rp/ale' 
@@ -48,6 +55,7 @@ Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-rake'
 Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdcommenter'
 "Plug 'scrooloose/syntastic'
 "Plug 'vim-scripts/SuperTab'
 "Plug 'tpope/vim-rails'
@@ -56,16 +64,21 @@ Plug 'tpope/vim-surround'
 "Plug 'vim-scripts/Gundo'
 "Plug 'terryma/vim-multiple-cursors'
 
-"Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 "Plug 'roxma/nvim-completion-manager'
 Plug 'vim-scripts/SuperTab'
-
 Plug 'godlygeek/tabular'
 Plug 'moll/vim-node'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } 
 Plug 'junegunn/fzf.vim'
-
 Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'jiangmiao/auto-pairs'
+
+" Autocomplete
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
+Plug 'takac/vim-hardtime'
 
 
 if (executable('ag'))
@@ -74,4 +87,8 @@ endif
 
 
 call plug#end()
+
+
+" Automatically start deoplete
+let g:deoplete#enable_at_startup = 1
 
